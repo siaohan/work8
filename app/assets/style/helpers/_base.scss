@@ -1,0 +1,24 @@
+*,*::before,*::after{
+    box-sizing:border-box ;
+}
+
+img{
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration:none;
+}
+ol, ul {
+	list-style: none;
+}
+
+h1{
+    width: 110px; 
+    height: 30px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}

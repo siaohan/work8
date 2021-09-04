@@ -1,0 +1,81 @@
+.footer{
+    background-color: $secondary;
+    .footer_subscription{
+        border-bottom: 1px solid $white;
+        color: $white;
+        justify-content: space-between;
+        align-items: center;
+        padding: 33px 85px;
+    }
+    .input-group{
+        width: 350px;
+        .input-group-text{
+            padding: 8px 16px;
+            font-size: 20px;
+            line-height: 22px;
+            background-color: $success;
+            color: $white;   
+        } 
+        .form-control{
+            color: $secondary;
+            padding: 8px 16px;
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+    .footer_software{
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 85px 15px 85px;
+        h1{
+            background-image: url(../images/DOYOGA.png);
+            background-size: 110px;
+        }
+    }
+    .footer_end{
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0px 85px 32px 85px;
+        font-size: 16px;
+        p{
+            color: $white;
+        }
+    }
+}
+@media(max-width:768px){
+    .footer{
+        .footer_subscription{
+            flex-wrap: wrap;
+            padding: 32px 39px;
+            h3{
+                padding-right: 30px;
+                padding-bottom: 10px;
+            }
+        }
+        .footer_software{
+            padding: 32px 50px 8px 39px;
+        }
+        .footer_end{
+            padding: 0px 50px 32px 39px;
+        }
+    }
+}
+
+@media(max-width:376px){
+    .footer{
+        .footer_subscription{
+            padding: 24px 15px;
+            h3{
+                padding-right: 0px;
+            }
+        }
+        .footer_software{
+            padding: 32px 15px 8px 15px;
+        }
+        .footer_end{
+            padding: 0px 15px 32px 15px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

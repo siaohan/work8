@@ -1,0 +1,63 @@
+h1{
+  background-image: url(../images/DOYOGA-logo.png);
+  background-size: 110px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary;
+  padding: 20px 85px;
+  font-size: 16px;
+  .header_nav{
+    display: flex;
+    a{
+      color: $dark-1;
+      &:hover{
+        color: $secondary;
+        font-weight: bold;
+      }
+    }
+  }
+  .header_interactive{
+    display: flex;
+    a{
+      color: $secondary;
+      border: 0.5px solid $secondary;
+      padding: 8px 16px;
+      border-radius: 20px;
+      &:hover{
+        background-color: $secondary;
+        color: $white;
+        border-radius: 20px;
+      }
+    }
+  } 
+}
+.trigger img{
+  width: 33px;
+}
+
+@media(min-width:769px){
+  .trigger{
+    display: none ;
+  }
+}
+
+@media(max-width:768px){
+  .header{
+    .header_nav,.header_interactive{
+      display: none ;
+    }
+  }
+  .rwd_none{
+    display: none;
+  }
+}
+
+@media(max-width:376px){
+  .header{
+    padding: 25px 15px;
+  }
+}

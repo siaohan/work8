@@ -1,0 +1,59 @@
+
+.reserve{
+    text-align: center;
+    padding: 64px 0px 16px 0px;
+    h3{
+        font-size: 28px;
+        color: $secondary;
+    }
+}
+.reserve_step_choose{
+    background-color: $primary;
+    border-radius: 20px;
+    text-align: center;
+    a{
+        color: $white;
+        background-color: $secondary;
+        font-size: 16px;
+        display: block;
+        padding: 12px 0px;
+        border-radius: 20px;
+    }
+}
+
+.reserve_step{
+    background-color: $primary;
+    border-radius: 20px;
+    text-align: center;
+    a{
+        color: $secondary;
+        font-size: 16px;
+        display: block;
+        padding: 12px 0px;
+        &:hover{
+            background-color: $secondary;
+            color: $white;
+            border-radius: 20px;
+        }
+    }
+}
+.precautions{
+    text-align: center;
+    padding: 32px 0px 16px 0px;
+    h3{
+        font-size: 28px;
+        color: $secondary;
+    }
+}
+
+.precautions_four{
+    width: 445px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+    color:  $secondary;
+    padding-bottom: 104px;
+    li{
+        padding-bottom: 4px;
+    }
+}

@@ -6,53 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+    <div class="header">
+      <div>
+        <a href="#"><h1>DOYOGA</h1></a>
       </div>
-    </nav>
+      <ul class="header_nav">
+        <li class="pl_2 pr_2"><a href="#">課程介紹</a></li>
+        <li class="pl_2 pr_2"><a href="#">瑜珈空間</a></li>
+        <li class="pl_2 pr_2"><a href="#">當月課表</a></li>
+      </ul>
+      <ul class="header_interactive">
+        <li><a href="reserve.html">立即預約</a></li>
+        <li class="pl_2"><a href="#">聯絡我們</a></li>
+      </ul>
+      <div class="trigger">
+        <a href="#"><img src="assets/images/justify.svg" alt=""></a>
+      </div>
+    
+    </div>
+
+    <!--以下是position -->
+    <div class="position-relative rwd_none">
+      <ul  class="position-fixed  top-50 end-0">
+        <lu><a href="#"><img class="pb_1"src="assets/images/icon-fb.svg" alt=""></a></lu>
+        <lu><a href="#"><img class="pb_1"src="assets/images/icon-ig.svg" alt=""></a></lu>
+        <lu><a href="#"><img class=""src="assets/images/icon-line.svg" alt=""></a></lu>
+      </ul>
+    </div>
+    
+       
 
     <%- contents %>
 
-    <footer class="footer">
-      footer
-    </footer>
+    <div class="footer">
+      <div class="footer_subscription d-flex">
+        <h3>現在訂閱，獲得課程優惠碼！</h3>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2">訂閱</span>
+        </div>
+      </div>
+      <div class="footer_software d-flex">
+        <a href="#"><h1>DOYOGA</h1></a>
+        <ul class="d-flex">
+          <lu><a href="#"><img class="wh_3"src="assets/images/icon-fb.svg" alt=""></a></lu>
+          <lu><a href="#"><img class="wh_3 ml_1"src="assets/images/icon-ig.svg" alt=""></a></lu>
+          <lu><a href="#"><img class="wh_3 ml_1"src="assets/images/icon-line.svg" alt=""></a></lu>
+        </ul>
+      </div>
+      <div class="footer_end d-flex">
+        <ul>
+          <li class="pb_1"><a href="#">課程介紹</a></li>
+          <li class="pb_1"><a href="#">瑜珈空間</a></li>
+          <li><a href="#">當月課表</a></li>
+        </ul>
+        <p>© 2021. All Rights Reserved.</p>
+        <p></p>
+      </div>
+      
+    </div>
+
+
+
+
+
+  
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
